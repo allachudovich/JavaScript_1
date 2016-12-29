@@ -1,15 +1,18 @@
 var arr = ['Костя', 'Назар', 'Ольга', 'Степан', 'Светлана'];
-var N = prompt('Введите имя');
-i = 0;
+
 
 while (i < arr.length) {
-    if (N == arr[i]) {
-        alert('Ошибка');
-    } else if (N !== arr[i] && i == (arr.length - 1)) {
-        alert(N + ' Вы успешно вошли!');
-        arr.push(N);
-
-        console.log(arr);
-    }
-    i++;
+    arr.push(prompt('Введите имя пользователя'));
 }
+
+var N = prompt('Введите Ваше имя');
+var txt = 'Error';
+
+for (var i = 0; i < arr.length; i++) {
+    if (N == arr[i]) {
+        txt = N + ', Вы успешно вошли!';
+        console.log(arr);
+        break;
+    }
+}
+alert(txt);
