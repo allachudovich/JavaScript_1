@@ -1,10 +1,4 @@
 var arr = ['Костя', 'Назар', 'Ольга', 'Степан', 'Светлана'];
-
-
-while (i < arr.length) {
-    arr.push(prompt('Введите имя пользователя'));
-}
-
 var N = prompt('Введите Ваше имя');
 var txt = 'Error';
 
